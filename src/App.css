@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  background-color: #223a5f;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .app-container {
+    padding: 15px 15px 50px 15px;
+  }
+}
+
+.score-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .score-main-container {
+    width: 65%;
+    margin-top: 15px;
+    padding: 10px 45px;
+  }
+}
+
+.finish-game-btn-and-enter-ur-name-container {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .finish-game-btn-and-enter-ur-name-container {
+    width: 65%;
+  }
+}
+
+.enter-name-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.enter-ur-name-para {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .enter-ur-name-para {
+    font-size: 16px;
+  }
+}
+
+.edit-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  color: white;
+}
+
+.edit-btn-container:hover {
+  transform: scale(1.02);
+  color: #fcba03;
+}
+
+.edit-btn-container:active {
+  transform: scale(0.96);
+}
+
+.edit-btn-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.enter-ur-name-input-field {
+  outline: none;
+  padding: 0 10px;
+  height: 30px;
+  color: #223a5f;
+}
+
+.enter-ur-name-btn {
+  background-color: white;
+  color: #223a5f;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 3px;
+  margin-left: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .enter-ur-name-btn {
+    padding: 6px 18px;
+  }
+}
+
+.enter-ur-name-btn:hover {
+  transform: scale(1.02);
+}
+
+.enter-ur-name-btn:active {
+  transform: scale(0.96);
+}
+
+.score-display-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #223a5f;
+  padding: 25px;
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 80px;
+  height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .score-display-card {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+.score-title-para {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .score-title-para {
+    font-size: 14px;
+  }
+}
+
+.score-count-para {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  font-family: 'Roboto' !important;
+}
+
+.rps-icons-select-main-container {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.icons-ul-container {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .icons-ul-container {
+    width: 65%;
+  }
+}
+
+.btn-icon-li-container {
+  list-style-type: none;
+  width: 35%;
+  margin: 15px;
+  padding: 0;
+}
+
+.icon-btn-container {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-btn-container img:hover {
+  transform: scale(1.02);
+}
+
+.icon-btn-container img:active {
+  transform: scale(0.98);
+}
+
+.icon-btn-container img {
+  width: 100%;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-btn-container img {
+    width: 80%;
+    cursor: pointer;
+  }
+}
+
+.finish-game-score-container {
+  color: white;
+}
+
+.finish-game-score-container p {
+  font-size: 16px;
+}
+
+.finish-game-popup-card {
+  background-color: #223a5f;
+  padding: 50px 20px;
+  width: 300px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .finish-game-popup-card {
+    width: 600px;
+    padding: 50px 30px;
+  }
+}
+
+.finish-game-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.finish-game-btn-container button {
+  background-color: white;
+  color: #223a5f;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .finish-game-btn-container button {
+    padding: 10px 32px;
+  }
+}
+
+.rules-container {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+}
+
+.rules-container button {
+  background-color: white;
+  padding: 10px 16px;
+  color: #223a5f;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Bree Serif';
+}
+
+@media screen and (min-width: 768px) {
+  .rules-container {
+    bottom: 30px;
+    right: 25px;
+  }
+
+  .rules-container button {
+    font-size: 18px;
+  }
+}
+
+.rules-container button:hover {
+  transform: scale(1.02);
+}
+
+.rules-container button:active {
+  transform: scale(0.96);
+}
+
+.popup-card {
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .popup-card {
+    width: 600px;
+    padding: 30px;
+  }
+}
+
+.popup-img {
+  width: 100%;
+}
+
+.close-btn-container {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-btn-container:hover {
+  transform: scale(1.02);
+}
+
+.close-btn-container:active {
+  transform: scale(0.96);
+}
+
+.game-res-icons-container {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .game-res-icons-container {
+    width: 65%;
+  }
+}
